@@ -1,0 +1,4 @@
+props:
+props is ntg but properties similar to html attributes,'
+props is an object
+props is an object used to exchange parent component to child component
