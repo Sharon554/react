@@ -2,3 +2,27 @@ props:
 props is ntg but properties similar to html attributes,'
 props is an object
 props is an object used to exchange parent component to child component
+
+state:
+*******
+-state is a mutable object whereas props is imutable 
+state is an mutable object which is used to store / isolate the data inside the component.
+
+class component:
+***************
+-class component 
+
+
+functional component:
+by defaalt functional component stateless because there is no state object
+in react v16.8 they introduce a concept called as Hooks.
+
+Hooks: Hooks is nothing but a function which implememnt all the feactures of class into functional components
+
+basics hooks are:
+1.useState()
+2.useEffect()
+3.useContext()
+
+syntax : const[state , setState]=useState(initialValue);
+state -it will store intial initialValuesetstate-it will

@@ -73,18 +73,42 @@
 //}
 
 // !props children
-import React from 'react'
-import PropChildEx from './propsex/PropChildEx'
-import SubChild from './propsex/SubChild'
+//import React from 'react'
+//import PropChildEx from './propsex/PropChildEx'
+//import SubChild from './propsex/SubChild'
 
+//const App = () => {
+  //return (
+    //<div>
+      //{/*<PropChildEx num={1000}>
+        //<h1>this is data coming from props children</h1>
+
+      //</PropChildEx>*/}
+      //</div>
+  //)
+//}
+
+//export default App
+//import React from 'react'
+//import FBCStateEx from './stateexample/FBCStateEx'
+//const App = () => {
+  //return (
+    //<div>
+      //<FBCStateEx/>
+      
+    //</div>
+ // )
+//}
+//export default App
+
+import React, { Component } from 'react';
+import CBCStateEx from './stateexample/CBCStateEx'
 const App = () => {
   return (
     <div>
-      {/*<PropChildEx num={1000}>
-        <h1>this is data coming from props children</h1>
-
-      </PropChildEx>*/}
-      </div>
+      <CBCStateEx/>
+      
+    </div>
   )
 }
 
