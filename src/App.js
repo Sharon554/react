@@ -101,15 +101,47 @@
 //}
 //export default App
 
-import React, { Component } from 'react';
-import CBCStateEx from './stateexample/CBCStateEx'
-const App = () => {
-  return (
-    <div>
-      <CBCStateEx/>
+//import React, { Component } from 'react';
+//import CBCStateEx from './stateexample/CBCStateEx'
+//const App = () => {
+  //return (
+    //<div>
+      //<CBCStateEx/>
       
-    </div>
-  )
+    //</div>
+  //)
+//}
+
+//export default App
+//import React from 'react'
+//import  FunctionalComponent from './components/FunctionalComponent';
+
+//function App (){
+  //return (
+    //<div className="App">
+      //<FunctionalComponent/>
+
+    //</div>
+  //);
+//}
+
+//export default App;
+
+
+import React, { Component } from 'react';
+import ClassComponent from './components/ClassComponent';
+
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <ClassComponent clgName="XYZ College" city="New York" apply={true}>
+                    Extra Text
+                </ClassComponent>
+            </div>
+        );
+    }
 }
 
-export default App
+export default App;
+
