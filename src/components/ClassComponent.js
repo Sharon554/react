@@ -1,26 +1,29 @@
-import React, { Component } from 'react';
-import './Styles.css';
+import React, { Component } from 'react'
+import './Styles.css'
+export default class ClassComponent extends Component {
+    constructor(props){
+        super(props)
 
-class ClassComponent extends Component {
-    render() {
-        console.log(this.props); // Object
+        this.state={
+            clicked:false,
+            message:'I am attending react class!!!!'
 
-        let applyStyle = this.props.apply ? 'heading' : '';
-        let inlineStyle = {
-            color: 'green',
-            backgroundColor: 'red',
-            fontSize: '50px' // Fixed typo (fontSixe → fontSize)
-        };
-
-        return (
-            <div>
-                <h1 className={`${applyStyle} font-style`}>
-                    Welcome to the React class {this.props.clgName}, {this.props.city}, {this.props.children}
-                </h1>
-                <h2 style={inlineStyle}>Good afternoon</h2>
-            </div>
-        );
+        }
     }
-}
+    changeMessage = () => (
+        this.setState({
+            clicked:true,
+            message: 'Thanks for coming!!'
+        })
+    )
+  render() {
+    return (
+        <div> 
+            <h1 className="heading1">{this.state.message}</h1>
+            <button onClick={this.changeMessage}>Click</button>
+        </div>
+        
 
-export default ClassComponent;
+    )
+  }
+}
