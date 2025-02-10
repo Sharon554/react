@@ -26,3 +26,47 @@ basics hooks are:
 
 syntax : const[state , setState]=useState(initialValue);
 state -it will store intial initialValuesetstate-it will
+
+
+Tight coupling
+one is dependent
+
+functional : stateless
+
+class: stateful component
+
+
+props:
+state: class
+
+private->constructor
+
+
+class extends Component{
+    constructor(){
+
+    }
+}
+
+
+props: properties or attributes
+state:storage private data private to ur class
+
+
+controlled componenets:
+**********************
+changing the functionality 
+
+form handling:
+<form action='myscript.js'>
+checking the data
+<form>
+<input type='text>
+</form>
+
+
+2) useEffect():
+**************
+
+-it allows developers to make necessary changes/side effects insdie the component.
+syntax: useEffect(callbackfn, dependency);

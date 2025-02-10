@@ -148,15 +148,29 @@
 
 
 
-import React from "react";
-import MyForm from "./MyForm"; // Ensure the file name and path are correct
+//import React from "react";
+//import MyForm from "./MyForm"; // Ensure the file name and path are correct
 
-function App() {
+//function App() {
+  //return (
+    //<div className="App">
+      //<MyForm />
+    //</div>
+ // );
+//}
+
+//export default App;
+
+
+
+import React from 'react'
+import UseEffectEx from './hookexamples1/UseEffectEx'
+
+const App = () => {
   return (
-    <div className="App">
-      <MyForm />
+    <div>
+      <UseEffectEx/>
     </div>
-  );
+  )
 }
-
-export default App;
+export default UseEffectEx
