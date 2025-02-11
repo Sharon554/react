@@ -65,8 +65,27 @@ checking the data
 </form>
 
 
-2) useEffect():
+2. useEffect():
 **************
 
 -it allows developers to make necessary changes/side effects insdie the component.
 syntax: useEffect(callbackfn, dependency);
+
+listv & keys: every listed items from the array should have a unique key prop value so it can track all the vhanges done in the lists.
+
+
+
+react.fragment:
+**************
+this will act as a parent element for the jsx element and we can give key prop for this
+
+3.usecontext():
+ ************
+-ref should be avoid using more
+-ref is used to target native/real DOM elements.
+
+
+4.usecontext();
+**************
+-to avoid props drilling we use context api.
+this hook is used 

@@ -162,15 +162,21 @@
 //export default App;
 
 
-
-import React from 'react'
-import UseEffectEx from './hookexamples1/UseEffectEx'
+import React from 'react';
+import ContextC1 from './hookexamples1/ContextC1';
+import ContextAPI from './hookexamples1/ContextAPI'; // Fixed path
 
 const App = () => {
   return (
     <div>
-      <UseEffectEx/>
+      {/* <UseEffectEx/> */}
+      {/* Uncomment below if you want to use RefExamples */}
+      {/* <RefExamples/> */}
+      <ContextAPI>
+        <ContextC1 />
+      </ContextAPI>
     </div>
-  )
-}
-export default UseEffectEx
+  );
+};
+
+export default App;
