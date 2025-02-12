@@ -89,3 +89,29 @@ this will act as a parent element for the jsx element and we can give key prop f
 **************
 -to avoid props drilling we use context api.
 this hook is used 
+
+
+routing in react:
+*****************
+rounting is a third party library used to provide navigation between two components//pages.
+-routing is not belongs to react it is a thrid party library called as react-router-dom"
+
+-npm install react-roter-dom@latest
+
+-"react-router-dom":"^7.1.5",
+7-major version 
+1-minor version
+5-patch version
+
+Routing in react:-
+******************
+- routing is a third party library used to provide navigation between two components//pages.
+- routing is not belongs to react it is a third party library called as 
+        "react-router-dom".
+
+- npm install react-router-dom@latest
+
+- "react-router-dom": "^7.1.5",
+7 - major version
+1 - minor version
+5 - patch version
