@@ -1,4 +1,4 @@
-import Classroom from './pages/Classroom';
+import React from 'react'
 
 const Classroom = () => {
   return (

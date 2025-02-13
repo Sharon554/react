@@ -1,14 +1,19 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-import {BrowserRouter  , Routes , Route} from "react-router-dom";
+import {BrowserRouter , Routes , Route} from "react-router-dom";
 import Dashboard from './pages/Dashboard';
-import Clasroom from './pages/Classroom';
+import Classroom from './pages/Classroom';
 import Assessments from './pages/Assessments';
 import Store from './pages/Store';
 import Calender from './pages/Calender';
 import News from './pages/News';
 import Blog from './pages/Blog';
+import Profile from './pages/Profile';
+import MyAccount from './pages/MyAccount';
+import MySettings from './pages/MySettings';
 import PageNotFound from './pages/PageNotFound';
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +26,10 @@ const App = () => {
             <Route path='/calender' element={<Calender/>}/>
             <Route path='/news' element={<News/>}/>
             <Route path='/blog' element={<Blog/>}/>
+            <Route path='/profile' element={<Profile/>}>
+            <Route path='/profile/myaccount' element={<MyAccount/>}/>
+            <Route path='/profile/mysettings' element={<MySettings/>}/>
+            </Route>
             <Route path='*' element={<PageNotFound/>}/>
         </Routes>
     </BrowserRouter>
